@@ -8,6 +8,7 @@ Release:	2
 License:	GPL
 Group:		X11/Applications
 Source0:	http://dl.sourceforge.net/rox/%{_name}-%{version}.tgz
+# Source0-md5:	e1bc28807d929e830983b9e013d5e3f2
 URL:		http://rox.sourceforge.net/rox_session.php3
 BuildRequires:	gtk+2-devel
 BuildRequires:	libxml-devel
