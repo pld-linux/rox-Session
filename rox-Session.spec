@@ -16,7 +16,7 @@ BuildRequires:	gtk+2-devel
 BuildRequires:	libxml-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define   _appsdir  %{_libdir}/ROX-apps
+%define		_appsdir	%{_libdir}/ROX-apps
 
 %description
 ROX-Session is a simple and easy to use session manager. It is part of
