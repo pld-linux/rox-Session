@@ -64,6 +64,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc %{_name}/Help/{Changes,README}
+%dir %{_appsdir}/%{_name}
 %attr(755,root,root) %{_appsdir}/%{_name}/AppRun
 %attr(755,root,root) %{_appsdir}/%{_name}/Login
 %attr(755,root,root) %{_appsdir}/%{_name}/RunROX
@@ -75,8 +76,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_appsdir}/%{_name}/Options.xml
 %{_appsdir}/%{_name}/Styles
 %{_appsdir}/%{_name}/Help
-%{_appsdir}/%{_name}/images/*
+%{_appsdir}/%{_name}/images
 %{_appsdir}/%{_name}/Messages
 %{_appsdir}/%{_name}/findrox.py
 %{_appsdir}/%{_name}/logout.py
-%dir %{_appsdir}/%{_name}
