@@ -4,8 +4,8 @@ Summary:	ROX-Session is a really simple session manager
 Summary(pl):	ROX-Session jest naprawdê prostym zarz±dc± sesji
 Name:		rox-Session
 Version:	0.1.25
-Release:	1
-License:	GPL
+Release:	2
+License:	GPL v2
 Group:		X11/Applications
 Source0:	http://dl.sourceforge.net/rox/%{_name}-%{version}.tgz
 # Source0-md5:	49c5ddeabdda9aa7c344bb260b0e73dd
@@ -15,6 +15,8 @@ BuildRequires:	dbus-glib-devel
 BuildRequires:	gtk+2-devel
 BuildRequires:	libxml2-devel
 BuildRequires:	pkgconfig
+Requires:	python-dbus
+Requires:	rox-Lib2 >= 1.9.16
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_appsdir	%{_libdir}/ROX-apps
@@ -48,7 +50,7 @@ rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_appsdir}/%{_name}/{Help,%{_platform},Messages}
 
 cd %{_name}
-install App* Login Options.xml Styles \
+install App* Login Options.xml Styles findrox.py interactive.py logout.py setup.py \
 	$RPM_BUILD_ROOT%{_appsdir}/%{_name}
 
 install Help/README $RPM_BUILD_ROOT%{_appsdir}/%{_name}/Help
@@ -60,13 +62,17 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc %{_name}/Help/Changes
+%doc %{_name}/Help/{Changes,README}
 %attr(755,root,root) %{_appsdir}/%{_name}/AppRun
 %attr(755,root,root) %{_appsdir}/%{_name}/Login
 %attr(755,root,root) %{_appsdir}/%{_name}/%{_platform}
+%attr(755,root,root) %{_appsdir}/%{_name}/interactive.py
+%attr(755,root,root) %{_appsdir}/%{_name}/setup.py
 %{_appsdir}/%{_name}/AppI*
 %{_appsdir}/%{_name}/Options.xml
 %{_appsdir}/%{_name}/Styles
 %{_appsdir}/%{_name}/Help
 %{_appsdir}/%{_name}/Messages
+%{_appsdir}/%{_name}/findrox.py
+%{_appsdir}/%{_name}/logout.py
 %dir %{_appsdir}/%{_name}
