@@ -3,12 +3,13 @@
 Summary:	ROX-Session is a really simple session manager
 Summary(pl):	ROX-Session jest naprawdê prostym zarz±dc± sesji
 Name:		rox-Session
-Version:	0.1.24
+Version:	0.1.25
 Release:	1
 License:	GPL
 Group:		X11/Applications
 Source0:	http://dl.sourceforge.net/rox/%{_name}-%{version}.tgz
-# Source0-md5:	2eb49f8458c776b450d4ff0714efcd0b
+# Source0-md5:	49c5ddeabdda9aa7c344bb260b0e73dd
+# Source0-size:	1027577
 URL:		http://rox.sourceforge.net/rox_session.php3
 BuildRequires:	dbus-glib-devel
 BuildRequires:	gtk+2-devel
@@ -46,7 +47,7 @@ rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_appsdir}/%{_name}/{Help,%{_platform},Messages}
 
 cd %{_name}
-install App* Login *.sh Options.xml Styles \
+install App* Login Options.xml Styles \
 	$RPM_BUILD_ROOT%{_appsdir}/%{_name}
 
 install Help/README $RPM_BUILD_ROOT%{_appsdir}/%{_name}/Help
@@ -61,7 +62,6 @@ rm -rf $RPM_BUILD_ROOT
 %doc %{_name}/Help/Changes
 %attr(755,root,root) %{_appsdir}/%{_name}/AppRun
 %attr(755,root,root) %{_appsdir}/%{_name}/Login
-%attr(755,root,root) %{_appsdir}/%{_name}/*sh
 %attr(755,root,root) %{_appsdir}/%{_name}/%{_platform}
 %{_appsdir}/%{_name}/AppI*
 %{_appsdir}/%{_name}/Options.xml
