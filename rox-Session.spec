@@ -1,7 +1,7 @@
 %define _name ROX-Session
 %define _platform %(echo `uname -s`-`uname -m|sed 's/i.86/ix86/'`)
 Summary:	ROX-Session is a really simple session manager
-Summary(pl):	ROX-Session jest naprawdê prostym mened¿erem sesji
+Summary(pl):	ROX-Session jest naprawdê prostym zarz±dc± sesji
 Name:		rox-Session
 Version:	0.1.15
 Release:	2
@@ -26,14 +26,13 @@ font, cursor blinking and mouse behaviour. It also allows you to
 choose a window manager, and change between window managers without
 logging out.
 
-
 %description -l pl
-ROX-Session jest prostym w obs³udze mened¿erem sesji. Jest to czê¶æ
+ROX-Session jest prostym w obs³udze zarz±dc± sesji. Jest to czê¶æ
 projektu ROX, ale mo¿e byæ u¿ywany osobno. Gdy logujesz siê ustawia on
 twoje biurko i uruchamia programy, o które zostanie poproszony.
 ROX-Session pozwala skonfigurowaæ ró¿ne ustawienia, takie jak domy¶lna
 czcionka, miganie kursora, czy zachowanie myszy. Pozwala on tak¿e na
-wybranie mened¿era okien i na zmiany miêdzy mened¿erami okien bez
+wybranie zarz±dcy okien i na zmianê programu zarz±dzaj±cego oknami bez
 wylogowywania siê.
 
 %prep
