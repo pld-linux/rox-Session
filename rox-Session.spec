@@ -13,7 +13,8 @@ Source0:	http://dl.sourceforge.net/rox/%{_name}-%{version}.tgz
 URL:		http://rox.sourceforge.net/rox_session.php3
 BuildRequires:	dbus-glib-devel
 BuildRequires:	gtk+2-devel
-BuildRequires:	libxml-devel
+BuildRequires:	libxml2-devel
+BuildRequires:	pkgconfig
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_appsdir	%{_libdir}/ROX-apps
