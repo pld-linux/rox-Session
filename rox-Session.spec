@@ -13,8 +13,6 @@ BuildRequires:	gtk+2-devel
 BuildRequires:	libxml-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define		_prefix		/usr/X11R6
-%define		_mandir		%{_prefix}/man
 %define   _appsdir  %{_libdir}/ROX-apps
 
 %description
