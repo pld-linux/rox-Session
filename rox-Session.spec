@@ -7,7 +7,7 @@ Version:	0.1.15
 Release:	2
 License:	GPL
 Group:		X11/Applications
-Source0:	ftp://ftp.sourceforge.net/pub/sourceforge/rox/%{_name}-%{version}.tgz
+Source0:	http://dl.sourceforge.net/rox/%{_name}-%{version}.tgz
 URL:		http://rox.sourceforge.net/rox_session.php3
 BuildRequires:	gtk+2-devel
 BuildRequires:	libxml-devel
