@@ -47,13 +47,14 @@ wylogowywania siê.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{_appsdir}/%{_name}/{Help,%{_platform},Messages}
+install -d $RPM_BUILD_ROOT%{_appsdir}/%{_name}/{Help,images,%{_platform},Messages}
 
 cd %{_name}
-install App* Login Options.xml Styles findrox.py interactive.py logout.py setup.py \
+install App* Login Options.xml RunROX SetupPanel Styles findrox.py interactive.py logout.py setup.py \
 	$RPM_BUILD_ROOT%{_appsdir}/%{_name}
 
 install Help/README $RPM_BUILD_ROOT%{_appsdir}/%{_name}/Help
+install images/* $RPM_BUILD_ROOT%{_appsdir}/%{_name}/images
 install %{_platform}/%{_name} $RPM_BUILD_ROOT%{_appsdir}/%{_name}/%{_platform}
 install Messages/* $RPM_BUILD_ROOT%{_appsdir}/%{_name}/Messages
 
@@ -65,6 +66,8 @@ rm -rf $RPM_BUILD_ROOT
 %doc %{_name}/Help/{Changes,README}
 %attr(755,root,root) %{_appsdir}/%{_name}/AppRun
 %attr(755,root,root) %{_appsdir}/%{_name}/Login
+%attr(755,root,root) %{_appsdir}/%{_name}/RunROX
+%attr(755,root,root) %{_appsdir}/%{_name}/SetupPanel
 %attr(755,root,root) %{_appsdir}/%{_name}/%{_platform}
 %attr(755,root,root) %{_appsdir}/%{_name}/interactive.py
 %attr(755,root,root) %{_appsdir}/%{_name}/setup.py
@@ -72,6 +75,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_appsdir}/%{_name}/Options.xml
 %{_appsdir}/%{_name}/Styles
 %{_appsdir}/%{_name}/Help
+%{_appsdir}/%{_name}/images/*
 %{_appsdir}/%{_name}/Messages
 %{_appsdir}/%{_name}/findrox.py
 %{_appsdir}/%{_name}/logout.py
