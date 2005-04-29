@@ -15,6 +15,7 @@ BuildRequires:	gtk+2-devel
 BuildRequires:	libxml2-devel
 BuildRequires:	pkgconfig
 Requires:	python-dbus
+Requires:	rox >= 2.2.0-2
 Requires:	rox-Lib2 >= 1.9.16
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
