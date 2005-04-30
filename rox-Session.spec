@@ -9,7 +9,7 @@ License:	GPL v2
 Group:		X11/Applications
 Source0:	http://dl.sourceforge.net/rox/%{_name}-%{version}.tgz
 # Source0-md5:	49c5ddeabdda9aa7c344bb260b0e73dd
-URL:		http://rox.sourceforge.net/rox_session.php3
+URL:		http://rox.sourceforge.net/phpwiki/index.php/ROX-Session
 BuildRequires:	dbus-glib-devel
 BuildRequires:	gtk+2-devel
 BuildRequires:	libxml2-devel
