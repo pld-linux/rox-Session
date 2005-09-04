@@ -4,13 +4,13 @@ Summary:	ROX-Session is a really simple session manager
 Summary(pl):	ROX-Session jest naprawdê prostym zarz±dc± sesji
 Name:		rox-Session
 Version:	0.1.25
-Release:	2
+Release:	3
 License:	GPL v2
 Group:		X11/Applications
 Source0:	http://dl.sourceforge.net/rox/%{_name}-%{version}.tgz
 # Source0-md5:	49c5ddeabdda9aa7c344bb260b0e73dd
 URL:		http://rox.sourceforge.net/phpwiki/index.php/ROX-Session
-BuildRequires:	dbus-glib-devel
+BuildRequires:	dbus-glib-devel >= 0.33
 BuildRequires:	gtk+2-devel
 BuildRequires:	libxml2-devel
 BuildRequires:	pkgconfig
