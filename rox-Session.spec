@@ -3,12 +3,12 @@
 Summary:	ROX-Session is a really simple session manager
 Summary(pl):	ROX-Session jest naprawdê prostym zarz±dc± sesji
 Name:		rox-Session
-Version:	0.1.25
-Release:	3
+Version:	0.26
+Release:	1
 License:	GPL v2
 Group:		X11/Applications
 Source0:	http://dl.sourceforge.net/rox/%{_name}-%{version}.tgz
-# Source0-md5:	49c5ddeabdda9aa7c344bb260b0e73dd
+# Source0-md5:	16438e5bb7e45a955dd9a924b0fba77f
 URL:		http://rox.sourceforge.net/phpwiki/index.php/ROX-Session
 BuildRequires:	dbus-glib-devel >= 0.33
 BuildRequires:	gtk+2-devel
@@ -55,7 +55,7 @@ install App* Login Options.xml RunROX SetupPanel Styles findrox.py interactive.p
 
 install Help/README $RPM_BUILD_ROOT%{_appsdir}/%{_name}/Help
 install images/* $RPM_BUILD_ROOT%{_appsdir}/%{_name}/images
-install %{_platform}/%{_name} $RPM_BUILD_ROOT%{_appsdir}/%{_name}/%{_platform}
+install %{_name} $RPM_BUILD_ROOT%{_appsdir}/%{_name}/%{_platform}
 install Messages/* $RPM_BUILD_ROOT%{_appsdir}/%{_name}/Messages
 
 %clean
