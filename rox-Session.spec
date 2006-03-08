@@ -1,7 +1,7 @@
 %define _name ROX-Session
 %define _platform %(echo `uname -s`-`uname -m|sed 's/i.86/ix86/'`)
-Summary:	ROX-Session is a really simple session manager
-Summary(pl):	ROX-Session jest naprawdê prostym zarz±dc± sesji
+Summary:	ROX-Session - a really simple session manager
+Summary(pl):	ROX-Session - naprawdê prosty zarz±dca sesji
 Name:		rox-Session
 Version:	0.27
 Release:	1
@@ -39,8 +39,6 @@ wylogowywania siê.
 %prep
 %setup -q -n rox-session-%{version}
 
-%build
-
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_roxdir}/%{_name}/{Messages,images}
@@ -68,7 +66,7 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_roxdir}/%{_name}/browser
 %{_roxdir}/%{_name}/.DirIcon
 %{_roxdir}/%{_name}/Styles
-%{_roxdir}/%{_name}/*.py[c,o]
+%{_roxdir}/%{_name}/*.py[co]
 %{_roxdir}/%{_name}/*.xml
 %{_roxdir}/%{_name}/images
 %dir %{_roxdir}/%{_name}/Messages
