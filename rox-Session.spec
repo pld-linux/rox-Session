@@ -1,5 +1,4 @@
 %define _name ROX-Session
-%define _platform %(echo `uname -s`-`uname -m|sed 's/i.86/ix86/'`)
 Summary:	ROX-Session - a really simple session manager
 Summary(pl):	ROX-Session - naprawdê prosty zarz±dca sesji
 Name:		rox-Session
