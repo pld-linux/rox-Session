@@ -2,12 +2,12 @@
 Summary:	ROX-Session - a really simple session manager
 Summary(pl):	ROX-Session - naprawdê prosty zarz±dca sesji
 Name:		rox-Session
-Version:	0.27
+Version:	0.28
 Release:	1
 License:	GPL v2
 Group:		X11/Applications
-Source0:	http://dl.sourceforge.net/rox/rox-session-%{version}.tar.bz2
-# Source0-md5:	15cb41c0bf8104a6a90021b1762b5712
+Source0:	http://heanet.dl.sourceforge.net/rox/rox-session-%{version}.tar.bz2
+# Source0-md5:	d984f83c01f545d0d3d233de3cdf3ea2
 URL:		http://rox.sourceforge.net/desktop/ROX-Session
 Requires:	dbus >= 0.33
 Requires:	python-dbus >= 0.33
