@@ -1,6 +1,6 @@
 %define _name ROX-Session
 Summary:	ROX-Session - a really simple session manager
-Summary(pl.UTF-8):   ROX-Session - naprawdę prosty zarządca sesji
+Summary(pl.UTF-8):	ROX-Session - naprawdę prosty zarządca sesji
 Name:		rox-Session
 Version:	0.28
 Release:	1
